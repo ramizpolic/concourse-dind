@@ -3,6 +3,8 @@
 Docker in Docker Ubuntu container for Concourse CI. Optimized for use with [Concourse CI](https://concourse.ci).
 Container image can be found at [fhivemind/concourse-dind](https://hub.docker.com/r/fhivemind/concourse-dind), and includes tools to work with Docker, Docker Compose, and Docker Squash.
 
+EDIT: Somehow the repo was deleted, working on backup
+
 ## Features
 * Automatically starts docker
 * Uses **errexit**, **pipefail**, and **nounset**
