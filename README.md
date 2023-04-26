@@ -3,8 +3,6 @@
 Docker in Docker Ubuntu container for Concourse CI. Optimized for use with [Concourse CI](http://concourse.ci/).    
 Ubuntu image published at [fhivemind/concourse-dind](https://hub.docker.com/r/fhivemind/concourse-dind/), which includes Docker, Docker Compose, and Docker Squash.
 
-Based on [karlkfi/concourse-dcind](https://github.com/karlkfi/concourse-dcind/).
-
 ## Features
 
 - Automatically starts docker.
