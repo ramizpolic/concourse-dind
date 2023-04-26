@@ -14,10 +14,11 @@ Based on [karlkfi/concourse-dcind](https://github.com/karlkfi/concourse-dcind/).
 - Passes through `--garden-mtu` from the parent Gardian container if `--mtu` is not specified in `DOCKER_OPTS`.
 - Sets `--data-root /scratch/docker` to bypass the graph filesystem if `--data-root` is not specified in `DOCKER_OPTS`.
 
-## Build
+## Run & Build
+The image is available on DockerHub, but if you would like to build locally, clone and run
 
 ```bash
-$> docker build -t fhivemind/concourse-dcind .
+docker run fhivemind/concourse-dind
 ```
 
 ## Example
