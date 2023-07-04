@@ -43,7 +43,6 @@ jobs:
       inputs:
       - name: code
       run:
-        path: entrypoint.sh
         args:
         - bash
         - -ceux
