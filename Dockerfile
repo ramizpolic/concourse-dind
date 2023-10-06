@@ -3,11 +3,10 @@ FROM ubuntu:focal-20230801
 ENV DOCKER_CHANNEL=stable \
   DOCKER_VERSION=24.0.5 \
   DOCKER_COMPOSE_VERSION=2.22.0 \
-  DOCKER_SQUASH=0.2.0 \
   DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-  && apt-get -y install bash curl iptables ca-certificates gnupg net-tools iproute2 make \
+  && apt-get -y install bash curl iptables ca-certificates make pigz \
   && curl -fL "https://download.docker.com/linux/static/${DOCKER_CHANNEL}/x86_64/docker-${DOCKER_VERSION}.tgz" | tar zx \
   && mv /docker/* /bin/ \
   && chmod +x /bin/docker* \
