@@ -169,3 +169,4 @@ if [[ "$#" != "0" ]]; then
   "$@"
 else
   bash --login
+fi
