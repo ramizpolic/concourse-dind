@@ -1,7 +1,7 @@
 # Concourse Docker-in-Docker
 
-Docker in Docker Ubuntu container for Concourse CI. Optimized for use with [Concourse CI](http://concourse.ci/).    
-Ubuntu image published at [fhivemind/concourse-dind](https://hub.docker.com/r/fhivemind/concourse-dind/), which includes Docker, Docker Compose, and Docker Squash.
+Docker in Docker Ubuntu container for Concourse CI. Optimized for use with [Concourse CI](http://concourse.ci/). 
+Images are published under `ghcr.io/ramizpolic/concourse-dind` which includes Docker, Docker Compose, and Docker Squash.
 
 ## Features
 
@@ -16,11 +16,11 @@ Ubuntu image published at [fhivemind/concourse-dind](https://hub.docker.com/r/fh
 The image is available on DockerHub, but if you would like to build locally, clone and run
 
 ```bash
-docker run fhivemind/concourse-dind
+docker run ghcr.io/ramizpolic/concourse-dind
 ```
 
 ## Example
-Here is an example of a Concourse [job](http://concourse.ci/concepts.html) that uses `fhivemind/concourse-dind` image to run a several containers in a task, and then runs the integration test suite.
+Here is an example of a Concourse [job](http://concourse.ci/concepts.html) to run a several containers in a task, and then runs the integration test suite.
 
 ```yaml
 jobs:
@@ -39,7 +39,7 @@ jobs:
       image_resource:
         type: docker-image
         source:
-          repository: fhivemind/concourse-dind
+          repository: ghcr.io/ramizpolic/concourse-dind
       inputs:
       - name: code
       run:
